@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+	background-color: black;
+	width: 100%;
+	height: 60px;
+	float: left;
+	text-align: right;
+}
+ul li {
+	display: inline-block;
+	width: 100px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 10px;
+}
+ul li a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+}
+ul li:hover a {
+	background-color: green;
+	display: block;
+}
+
+.active {
+	background-color: green;
+}
+
+/* step 1: hidden */
+
+ul li ul, li  {
+	display: none;
+}
+
+/* step 2: show */
+ul li:hover ul, li  {
+	display: block;
+}
